@@ -1,5 +1,9 @@
 <?php
 
+if (!extension_loaded('sockets')) {
+    die('The sockets extension is not loaded.');
+}
+
 $title = "IP Checker Service"; // website's title
 $servers = [
     '1' => [
